@@ -5,3 +5,7 @@ api-version: 1.16
 authors: [ Maximilian1021 ]
 description: Subsystem Farmwelt
 website: https://max1021.de
+
+commands:
+  Spawn:
+    description: teleportiert dich zum Spawn
