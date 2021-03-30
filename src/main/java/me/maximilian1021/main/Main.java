@@ -2,6 +2,7 @@ package me.maximilian1021.main;
 
 import me.maximilian1021.cmdSpawn;
 import me.maximilian1021.events.events;
+import me.maximilian1021.events.join;
 import me.maximilian1021.events.tablistener;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.PluginManager;
@@ -44,6 +45,7 @@ public final class Main extends JavaPlugin {
         pm.registerEvents(new Chatformat(), this);
         pm.registerEvents(new events(), this);
         pm.registerEvents(new tablistener(), this);
+        pm.registerEvents(new join(), this);
     }
 
 
