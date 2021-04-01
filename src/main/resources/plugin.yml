@@ -3,9 +3,9 @@ version: ${project.version}
 main: me.maximilian1021.main.Main
 api-version: 1.16
 authors: [ Maximilian1021 ]
-description: Subsystem Farmwelt
+description: Regelt die Funktionen und Permission auf der Farmwelt
 website: https://max1021.de
 
 commands:
   Spawn:
-    description: teleportiert dich zum Spawn
+    description: Teleportiert dich zum Weltspawnpunkt

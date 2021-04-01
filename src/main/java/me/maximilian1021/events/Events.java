@@ -12,7 +12,7 @@ import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.player.PlayerPickupItemEvent;
 
-public class events implements Listener {
+public class Events implements Listener {
 
     @EventHandler
     public void PlayerInteract(PlayerInteractEvent e) {

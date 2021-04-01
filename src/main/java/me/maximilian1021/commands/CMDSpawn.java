@@ -1,4 +1,4 @@
-package me.maximilian1021;
+package me.maximilian1021.commands;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
@@ -11,7 +11,7 @@ import org.jetbrains.annotations.NotNull;
 
 
 
-public class cmdSpawn implements CommandExecutor {
+public class CMDSpawn implements CommandExecutor {
     @Override
     public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, @NotNull String[] args) {
         World world = Bukkit.getWorld("world");

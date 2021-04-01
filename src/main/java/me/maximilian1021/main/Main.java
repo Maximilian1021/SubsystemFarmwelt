@@ -1,9 +1,9 @@
 package me.maximilian1021.main;
 
-import me.maximilian1021.cmdSpawn;
-import me.maximilian1021.events.events;
-import me.maximilian1021.events.join;
-import me.maximilian1021.events.tablistener;
+import me.maximilian1021.commands.CMDSpawn;
+import me.maximilian1021.events.Events;
+import me.maximilian1021.events.Join;
+import me.maximilian1021.events.Tablistener;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -17,11 +17,6 @@ public final class Main extends JavaPlugin {
 
     public static Main getPlugin() {
         return plugin;
-    }
-
-
-    public final boolean isPlaceholderAPIEnabled() {
-        return this.getServer().getPluginManager().isPluginEnabled("PlaceholderAPI");
     }
 
     @Override
@@ -43,15 +38,19 @@ public final class Main extends JavaPlugin {
         PluginManager pm = Bukkit.getServer().getPluginManager();
 
         pm.registerEvents(new Chatformat(), this);
-        pm.registerEvents(new events(), this);
-        pm.registerEvents(new tablistener(), this);
-        pm.registerEvents(new join(), this);
+        pm.registerEvents(new Events(), this);
+        pm.registerEvents(new Tablistener(), this);
+        pm.registerEvents(new Join(), this);
     }
 
 
     private void registerCommands() {
 
-        Objects.requireNonNull(getCommand("Spawn")).setExecutor(new cmdSpawn());
+        Objects.requireNonNull(getCommand("Spawn")).setExecutor(new CMDSpawn());
+    }
+
+    public final boolean isPlaceholderAPIEnabled() {
+        return this.getServer().getPluginManager().isPluginEnabled("PlaceholderAPI");
     }
 
 }
