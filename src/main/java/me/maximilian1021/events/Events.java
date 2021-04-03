@@ -69,7 +69,7 @@ public class Events implements Listener {
         Player p = e.getPlayer();
         if (!p.hasPlayedBefore()){
             World world = Bukkit.getWorld("world");
-            Location loc = new Location(world,199.5, 64, -67.5);
+            Location loc = new Location(world,-33.5, 71, 255.5);
 
             p.teleport(loc);
         }

@@ -16,7 +16,7 @@ public class CMDSpawn implements CommandExecutor {
     public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, @NotNull String[] args) {
         World world = Bukkit.getWorld("world");
         Player p = (Player) sender;
-        Location loc = new Location(world, 199.5, 64, -67.5);
+        Location loc = new Location(world, -33.5, 71, 255.5);
 
         p.teleport(loc);
         p.sendMessage("§aFarmwelt §7| §bDu wurdest zum Spawn teleportiert");
